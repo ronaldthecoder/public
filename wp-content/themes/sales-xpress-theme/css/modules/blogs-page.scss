@@ -1,0 +1,17 @@
+.blogs {
+  position: relative;
+
+  .blog_page_pattern--3 {
+    position: absolute;
+    right: 0;
+    top: 21rem;
+    z-index: 10;
+  }
+
+  .blog-search-dot-patterns {
+    position: absolute;
+    top: 39%;
+    right: 0;
+    z-index: 0;
+  }
+}

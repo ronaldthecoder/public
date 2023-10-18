@@ -1,0 +1,1 @@
+{"version":3,"file":"index.css","mappings":";;;AAAA;EACE;EACA;EACA;EACA;AACF,C","sources":["webpack://sales-xpress-contact-us/./src/index.scss"],"sourcesContent":[".sales-xpress-contact-block {\n  padding: 20px;\n  border-radius: 2px;\n  border: 1px solid #f1f1f1;\n  background-color: #00668c;\n}\n"],"names":[],"sourceRoot":""}

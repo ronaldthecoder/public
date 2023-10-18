@@ -1,0 +1,29 @@
+.blog-card {
+  width: 100%;
+  max-width: 431px;
+  height: auto;
+  overflow: hidden;
+  z-index: 10;
+
+  h5 {
+    line-height: 150%;
+  }
+  .img-box {
+    height: 22.7rem;
+  }
+  .img-box img {
+    width: 100%;
+    height: auto;
+  }
+  .blog-card-description {
+    padding: 3rem 2rem;
+    gap: 1rem;
+    // height: calc(100% - 227px);
+    height: 100%;
+    border-radius: 0 0 10px 10px;
+  }
+  .article-details {
+    align-items: center;
+    gap: 1.5rem;
+  }
+}

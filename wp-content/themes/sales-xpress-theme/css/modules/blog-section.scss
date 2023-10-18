@@ -1,0 +1,22 @@
+.blog-section {
+  padding-top: 8rem;
+  padding-bottom: 10rem;
+  position: relative;
+  overflow: hidden;
+
+  .container {
+    z-index: 10;
+  }
+
+  .blog-post-pattern {
+    position: absolute;
+    z-index: 0;
+    transform: translateX(35rem);
+  }
+}
+
+@media (max-width: 540px) {
+  .blog-section {
+    padding-bottom: 6rem;
+  }
+}

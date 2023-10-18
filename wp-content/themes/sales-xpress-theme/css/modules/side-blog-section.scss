@@ -1,0 +1,38 @@
+.side-blog-section {
+  position: relative;
+  margin-bottom: 9rem;
+
+  .container {
+    gap: 4rem;
+  }
+  .blog-search-circle-pattern {
+    position: absolute;
+    left: 0;
+    bottom: -150px;
+    z-index: -1;
+  }
+  .archive-second-dot-pattern {
+    position: absolute;
+    right: 0;
+    bottom: -610px;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 1250px) {
+  .side-blog-section {
+    .container {
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .side-blog-section {
+    margin-bottom: 5rem;
+    .container {
+      grid-template-columns: 1fr;
+    }
+  }
+}

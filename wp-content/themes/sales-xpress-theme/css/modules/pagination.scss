@@ -1,0 +1,12 @@
+.pagination-box {
+  gap: 1rem;
+  margin-bottom: 5rem;
+  .page-numbers.current {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    line-height: 180%;
+    color: $grey--700;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "sales-xpress-theme",
+  "version": "1.0.0",
+  "description": "Sales Xpress WordPress Application",
+  "main": "index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "start": "wp-scripts start",
+    "dev": "wp-scripts start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ronald Chan",
+  "license": "ISC",
+  "dependencies": {
+    "@glidejs/glide": "^3.6.0",
+    "@wordpress/scripts": "*",
+    "axios": "^1.5.0",
+    "jquery": "^3.7.1"
+  }
+}

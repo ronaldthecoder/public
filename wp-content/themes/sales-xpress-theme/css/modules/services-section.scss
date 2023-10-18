@@ -1,0 +1,202 @@
+.services-section {
+  position: relative;
+  overflow: hidden;
+
+  .services-pattern {
+    position: absolute;
+    right: -22.7rem;
+    top: 28rem;
+    z-index: 0;
+  }
+  .container {
+    z-index: 20;
+  }
+  #services-section {
+    padding-top: 5rem;
+  }
+  .partners-sub-section {
+    padding-top: 27rem;
+    padding-bottom: 12rem;
+    p {
+      text-align: center;
+      margin-bottom: 6.3rem;
+    }
+  }
+  .services-sub-section {
+    justify-content: space-between;
+    padding-top: 5rem;
+    padding-bottom: 25rem;
+    gap: 3rem;
+    .service-description {
+      width: 35rem;
+    }
+    .service-description .title--1 {
+      margin-bottom: 1.5rem;
+    }
+    .service-description .paragraph {
+      width: 31rem;
+      margin-bottom: 4rem;
+    }
+    .service-description a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+    .services {
+      gap: 5rem;
+    }
+    .services li {
+      padding-left: 2rem;
+      padding-top: 3rem;
+      width: 28rem;
+      padding-right: 4rem;
+    }
+    .services li img {
+      margin-bottom: 1rem;
+    }
+    .services li .title--1 {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@media (max-width: 1450px) {
+  .services-section {
+    .partners-sub-section {
+      padding-top: 18rem;
+    }
+    .services-sub-section {
+      padding-bottom: 15rem;
+      .services {
+        gap: 2rem;
+      }
+      .service-description .paragraph {
+        width: 100%;
+      }
+    }
+  }
+}
+@media (max-width: 1350px) {
+  .services-section {
+    .services-sub-section {
+      flex-direction: column;
+      align-items: center;
+      gap: 5rem;
+
+      .services {
+        gap: 4rem;
+      }
+      .services li {
+        padding-bottom: 3rem;
+      }
+      .service-description .title--1 {
+        text-align: center;
+      }
+      .service-description .paragraph {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+      .service-description .title--2 {
+        justify-content: center;
+      }
+    }
+  }
+}
+@media (max-width: 970px) {
+  .services-section {
+    .services-pattern {
+      right: -40rem;
+    }
+    .partners-sub-section {
+      padding-bottom: 6rem;
+      .partners-list {
+        grid-template-columns: repeat(6, 1fr);
+        justify-items: center;
+        row-gap: 2rem;
+      }
+      .partners-list li:nth-child(1) {
+        grid-column: 1/3;
+      }
+      .partners-list li:nth-child(2) {
+        grid-column: 3/5;
+      }
+      .partners-list li:nth-child(3) {
+        grid-column: 5/7;
+      }
+      .partners-list li:nth-child(4) {
+        padding-left: 5rem;
+        grid-column: 1/4;
+      }
+      .partners-list li:nth-child(5) {
+        padding-right: 5rem;
+        grid-column: 4/7;
+      }
+    }
+    .services-sub-section {
+      padding-bottom: 9rem;
+      .services {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+      }
+      .services li:nth-child(3) {
+        grid-column: -3/-1;
+      }
+    }
+  }
+}
+@media (max-width: 880px) {
+  .services-section {
+    .partners-sub-section {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding-top: calc(100vh * 0.1);
+      #services-section {
+        max-width: 50rem;
+      }
+    }
+  }
+}
+@media (max-width: 670px) {
+  .services-section {
+    .services-sub-section {
+      .services {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .services li:nth-child(3) {
+        grid-column: inherit;
+      }
+    }
+  }
+}
+@media (max-width: 540px) {
+  .services-section {
+    .partners-sub-section {
+      padding-bottom: 3rem;
+      #services-section {
+        max-width: 37rem;
+        margin-bottom: 4rem;
+      }
+      .partners-list {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        row-gap: 2rem;
+      }
+      .partners-list li {
+        grid-column: inherit !important;
+      }
+      .partners-list li:nth-child(4) {
+        padding-left: 0;
+      }
+      .partners-list li:nth-child(5) {
+        padding-right: 0;
+      }
+    }
+    .services-sub-section {
+      .service-description {
+        width: 90%;
+      }
+    }
+  }
+}

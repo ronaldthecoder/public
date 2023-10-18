@@ -1,0 +1,9 @@
+.home {
+  position: relative;
+
+  .hero-pattern {
+    position: absolute;
+    transform: translate(-230px, 200px);
+    z-index: 20;
+  }
+}

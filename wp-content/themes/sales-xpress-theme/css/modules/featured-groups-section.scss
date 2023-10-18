@@ -1,0 +1,37 @@
+.featured-groups-section {
+  margin-bottom: 5rem;
+  .container {
+    z-index: 10;
+  }
+  header {
+    margin-bottom: 4rem;
+  }
+  .featured-groups {
+    gap: 6rem;
+  }
+  .featured-group {
+    gap: 2rem;
+    background: $highlight;
+    border-radius: 10px;
+    padding: 4rem 2rem;
+  }
+  .featured-group .link {
+    color: $primary;
+  }
+}
+
+@media (max-width: 1220px) {
+  .featured-groups-section {
+    .featured-groups {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4rem;
+    }
+  }
+}
+@media (max-width: 825px) {
+  .featured-groups-section {
+    .featured-groups {
+      grid-template-columns: 1fr;
+    }
+  }
+}

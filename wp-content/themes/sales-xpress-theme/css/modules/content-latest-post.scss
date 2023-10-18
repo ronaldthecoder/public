@@ -1,0 +1,145 @@
+.latest-post {
+  header {
+    margin-bottom: 4rem;
+  }
+  .content {
+    gap: 5rem;
+  }
+  .main-post {
+    width: 63rem;
+    margin-bottom: 2rem;
+    z-index: 20;
+  }
+  .main-post-img {
+    overflow: hidden;
+    width: 63rem;
+    background: $grey--200;
+    margin-bottom: 1.5rem;
+  }
+  .article-details {
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .side-post {
+    z-index: 20;
+  }
+  .side-post li {
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+  .side-post li.top {
+    padding-bottom: 6.1rem;
+  }
+  .side-post li.mid {
+    border-bottom: 1px solid #9ca3af;
+    border-top: 1px solid #9ca3af;
+    padding-top: 6.1rem;
+    padding-bottom: 6.1rem;
+  }
+  .side-post li.bottom {
+    padding-top: 6.1rem;
+  }
+  .side-post-img {
+    overflow: hidden;
+    max-width: 21.2rem;
+    height: auto;
+    background: $grey--200;
+  }
+  .side-post-img img {
+    height: auto;
+  }
+  .side-post-details {
+    width: 46.3rem;
+  }
+  .side-post .article-details {
+    margin-bottom: 0rem;
+  }
+  .side-post h5 {
+    margin-bottom: 0rem;
+  }
+  .bottom a {
+    padding-bottom: 1rem;
+  }
+}
+
+@media (max-width: 1450px) {
+  .latest-post {
+    .main-post-img img {
+      width: 45rem;
+      height: auto;
+    }
+    .main-post-img {
+      width: 45rem;
+    }
+    .main-post {
+      width: 45rem;
+    }
+    .content {
+      gap: 3rem;
+    }
+  }
+}
+
+@media (max-width: 1020px) {
+  .latest-post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    header {
+      max-width: 630px;
+      width: 100%;
+    }
+    .content {
+      flex-direction: column;
+    }
+    .main-post-img,
+    .main-post-img img,
+    .main-post {
+      width: 100%;
+      max-width: 63rem;
+    }
+    .content {
+      align-items: center;
+    }
+    .side-post {
+      max-width: 63rem;
+    }
+  }
+}
+
+@media (max-width: 540px) {
+  .latest-post {
+    .content {
+      gap: 5rem;
+    }
+    .side-post li {
+      flex-direction: column;
+    }
+    .side-post .article-details,
+    .article-details {
+      margin-bottom: 1rem;
+    }
+    .side-post h5,
+    h3 {
+      margin-bottom: 1rem;
+    }
+    .side-post-details {
+      width: 100%;
+    }
+    .side-post-img {
+      max-width: none;
+    }
+    .side-post li.top {
+      padding-bottom: 3rem;
+    }
+    .side-post li.bottom {
+      padding-top: 4rem;
+    }
+    .side-post li.mid {
+      padding-top: 4rem;
+      padding-bottom: 3rem;
+    }
+  }
+}

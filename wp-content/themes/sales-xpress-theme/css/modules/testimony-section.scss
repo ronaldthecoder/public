@@ -1,0 +1,103 @@
+.testimony-section {
+  position: relative;
+  padding-top: 5rem;
+  margin-top: calc(100vh * 0.1);
+  background: $highlight;
+  margin-bottom: 25rem;
+
+  .testimony-pattern-top {
+    position: absolute;
+    top: 0;
+    transform: translateY(calc(-100% + 1px));
+    width: 100%;
+  }
+  .testimony-pattern-bottom {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(calc(100% - 1px));
+    width: 100%;
+  }
+  .container {
+    z-index: 20;
+    width: 100%;
+    max-width: 127rem;
+  }
+  h3 {
+    text-align: center;
+    margin-bottom: 6rem;
+  }
+  .testimony-slides {
+    margin-bottom: 7rem;
+  }
+  .testimony-card {
+    background: $background;
+    padding: 4rem 5rem;
+    width: 58rem;
+  }
+  .testimony-picture {
+    background: $grey--400;
+    height: 8rem;
+    width: 8rem;
+    overflow: hidden;
+  }
+  .testimony-picture img {
+    width: 8rem;
+    height: auto;
+  }
+  .profile {
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 2rem;
+  }
+  .quote-left {
+    margin-bottom: 2rem;
+  }
+  .slider__bullets {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .glide__bullet {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 100%;
+    border: none;
+    background: $grey--400;
+    cursor: pointer;
+  }
+  .glide__bullet--active {
+    background: $grey--700;
+  }
+}
+@media (max-width: 1450px) {
+  .testimony-section {
+    margin-bottom: 15rem;
+  }
+}
+@media (max-width: 880px) {
+  .testimony-section {
+    margin-bottom: 10rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .testimony-section {
+    margin-bottom: 5rem;
+    .testimony-slides {
+      margin-bottom: 4rem;
+    }
+    h3 {
+      margin-bottom: 4rem;
+    }
+    .testimony-card {
+      padding: 2rem 2rem;
+    }
+    .testimony-picture {
+      height: 7rem;
+      width: 7rem;
+    }
+    .profile {
+      gap: 2rem;
+    }
+  }
+}

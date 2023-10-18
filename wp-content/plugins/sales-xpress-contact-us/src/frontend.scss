@@ -1,0 +1,157 @@
+.contact-us-section {
+  padding-top: 4.5rem;
+  padding-bottom: 23rem;
+  .container {
+    position: relative;
+    max-width: 132rem;
+    justify-content: space-between;
+  }
+  .contact-us-description {
+    padding-top: 4rem;
+    position: relative;
+  }
+  .contact-us-description h1 {
+    margin-bottom: 7rem;
+  }
+  .contact-us-info {
+    gap: 2rem;
+  }
+  .contact-us-info {
+    padding-left: 1rem;
+  }
+  .contact-us-info li {
+    align-items: center;
+    gap: 2rem;
+  }
+  .contact-us-form {
+    background: #f3f4f6;
+    padding: 4rem 5rem 0 5rem;
+    max-width: 65rem;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    position: relative;
+  }
+  label {
+    font-family: "Poppins", sans-serif;
+    color: #374151;
+  }
+  input,
+  textarea {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    line-height: 180%;
+    outline: none;
+    border: none;
+    background: #e5e7eb;
+  }
+  input.field {
+    padding: 1rem 2rem;
+    margin-bottom: 3rem;
+  }
+  textarea {
+    resize: none;
+    padding: 1rem 2rem;
+    margin-bottom: 5rem;
+  }
+  input.submit {
+    background: #00668c;
+    color: #fffefb;
+    font-weight: 600;
+    padding: 1rem 5rem;
+    z-index: 10;
+    cursor: pointer;
+  }
+  .contact-us-form-ending {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(calc(100% - 1px));
+    right: 0;
+    z-index: -1;
+  }
+  .contact-us-lines-pattern--1 {
+    position: absolute;
+    right: -10px;
+    top: 180px;
+    z-index: -1;
+  }
+  .contact-us-lines-pattern--2 {
+    position: absolute;
+    bottom: -200px;
+    z-index: -1;
+  }
+  .popup {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    background-color: #71c4ef;
+    padding: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.311);
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+  }
+  .popup.hidden {
+    transform: translateX(60px);
+    opacity: 0;
+  }
+  .popup.error {
+    background: #6b7280;
+  }
+  .popup.error p {
+    color: #f3f4f6;
+  }
+  input.field.missing,
+  textarea.missing {
+    background: #9ca3af;
+  }
+
+  @media (max-width: 1240px) {
+    padding-bottom: 18rem;
+    .container {
+      flex-direction: column;
+      align-items: center;
+      gap: 8rem;
+    }
+    .contact-us-description {
+      padding-top: 2rem;
+    }
+    .contact-us-form {
+      max-width: 61.3rem;
+      width: 100%;
+    }
+  }
+  @media (max-width: 540px) {
+    .container {
+      gap: 5rem;
+    }
+    padding-bottom: 10rem;
+    .contact-us-description {
+      align-self: flex-start;
+    }
+    .contact-us-description h1 {
+      margin-bottom: 4rem;
+    }
+    .contact-us-info {
+      padding: 0;
+    }
+    .contact-us-info li {
+      gap: 1rem;
+    }
+    .contact-us-info svg {
+      width: 3rem;
+      height: 3rem;
+    }
+    .contact-us-form {
+      padding: 2rem 1.5rem 0 1.5rem;
+    }
+    input.field {
+      margin-bottom: 2rem;
+    }
+    textarea {
+      margin-bottom: 3.5rem;
+    }
+    input.submit {
+      margin-bottom: 3.5rem;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "blog-read-time",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "wp-scripts start src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@wordpress/scripts": "^26.13.0",
+    "jquery": "^3.7.1"
+  }
+}

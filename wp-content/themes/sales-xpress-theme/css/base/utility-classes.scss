@@ -1,0 +1,267 @@
+// TEXT STYLE -------
+h1 {
+  font-family: $font--primary;
+  font-size: 6rem;
+  line-height: 115%;
+  color: $grey--950;
+  letter-spacing: 1.9px;
+}
+h2 {
+  font-family: $font--primary;
+  font-size: 4.8rem;
+  line-height: 100%;
+  color: $grey--950;
+}
+h3 {
+  font-family: $font--primary;
+  font-size: 3.6rem;
+  line-height: 150%;
+  color: $grey--950;
+}
+h4 {
+  font-family: $font--primary;
+  font-size: 3rem;
+  line-height: 225%;
+  color: $grey--950;
+}
+h5 {
+  font-family: $font--primary;
+  font-size: 2.4rem;
+  line-height: 115%;
+  color: $grey--950;
+}
+h1.bold,
+h2.bold,
+h3.bold,
+h4.bold,
+h5.bold {
+  font-weight: 700;
+}
+.title--1 {
+  font-family: $font--secondary;
+  font-size: 2rem;
+  line-height: 175%;
+  color: $grey--950;
+}
+.title--1.bold {
+  font-weight: 600;
+}
+.title--2 {
+  font-family: $font--secondary;
+  font-size: 1.8rem;
+  line-height: 175%;
+  color: $grey--950;
+}
+.title--2.bold {
+  font-weight: 600;
+}
+p,
+a {
+  font-family: $font--secondary;
+  font-size: 1.6rem;
+  line-height: 180%;
+  color: $grey--700;
+}
+a.bold {
+  font-weight: 600;
+}
+p.bold {
+  font-weight: 800;
+  line-height: 180%;
+}
+a.link {
+  font-weight: 500;
+  text-decoration: underline;
+  line-height: 180%;
+}
+
+// TEXT COLOR -------
+.text-grey--600 {
+  color: $grey--950;
+}
+.text-grey--500 {
+  color: $grey--700;
+}
+.text-grey--400 {
+  color: $grey--500;
+}
+.text-grey--300 {
+  color: $grey--400;
+}
+.text-grey--200 {
+  color: $grey--200;
+}
+.text-grey--100 {
+  color: $grey--100;
+}
+.text--primary {
+  color: #00668c;
+}
+.text--highlight {
+  color: #d4eaf7;
+}
+.text--background {
+  color: #fffefb;
+}
+
+// BACKGROUND COLOR -------
+.bg-grey--600 {
+  background: $grey--950;
+}
+.bg-grey--500 {
+  background: $grey--700;
+}
+.bg-grey--400 {
+  background: $grey--500;
+}
+.bg-grey--300 {
+  background: $grey--400;
+}
+.bg-grey--200 {
+  background: $grey--200;
+}
+.bg-grey--100 {
+  background: $grey--100;
+}
+.bg--primary {
+  background: #00668c;
+}
+.bg--highlight {
+  background: #d4eaf7;
+}
+.bg--background {
+  background: #fffefb;
+}
+.bg--l-blue {
+  background: #d4eaf7;
+}
+.bg--b-blue {
+  background: #71c4ef;
+}
+.bg--b-blue-2 {
+  background: #5a9dbf;
+}
+
+// UTITITIES ----------
+.container {
+  width: 100%;
+  max-width: 147.5rem;
+  padding: 0 5rem;
+}
+.rounded {
+  border-radius: 10px;
+}
+.rounded-full {
+  border-radius: 100px;
+}
+.grid {
+  display: grid;
+}
+.grid--2cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--3cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--5cols {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.flex {
+  display: flex;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.hidden {
+  display: none;
+}
+
+// COMPONENTS ----------
+.cta--btn {
+  border-radius: 100px;
+  background: #00668c;
+  font-family: $font--secondary;
+  font-size: 1.6rem;
+  line-height: 180%;
+  border: none;
+  padding: 0.8rem 2.4rem;
+  cursor: pointer;
+}
+.cta--btn a {
+  color: $background;
+  font-weight: 600;
+}
+.cta--btn:hover {
+  background: #3385a3;
+}
+.divider {
+  width: 100%;
+  height: 1px;
+  background: $grey--400;
+}
+.underline:hover {
+  text-decoration: underline;
+}
+
+// MEDIA QUERY
+@media (max-width: 1055px) {
+  p,
+  a {
+    font-size: 1.4rem;
+  }
+  h1 {
+    font-size: 4.8rem;
+  }
+  .container {
+    padding: 0 2.5rem;
+  }
+}
+@media (max-width: 1020px) {
+  .container {
+    padding: 0 5rem;
+  }
+}
+@media (max-width: 880px) {
+  h1 {
+    font-size: 6rem;
+  }
+  h2 {
+    font-size: 4.2rem;
+  }
+  p,
+  a {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 540px) {
+  .container {
+    padding: 0 2rem;
+  }
+  h1 {
+    font-size: 3rem;
+    letter-spacing: 1px;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
+  p.title--1 {
+    font-size: 1.4rem;
+  }
+  p,
+  a {
+    font-size: 1.4rem;
+  }
+}

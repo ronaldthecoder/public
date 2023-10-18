@@ -1,0 +1,23 @@
+.archive {
+  position: relative;
+
+  .archive-featured-blog-pattern {
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    top: 19rem;
+  }
+  .archive-main-dot-pattern {
+    position: absolute;
+    left: 4rem;
+    z-index: 0;
+    top: 54.5rem;
+  }
+}
+@media (max-width: 900px) {
+  .archive {
+    .archive-main-dot-pattern {
+      left: -4rem;
+    }
+  }
+}

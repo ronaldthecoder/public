@@ -1,0 +1,165 @@
+/*!******************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[4].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[4].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[4].use[3]!./src/frontend.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************/
+.contact-us-section {
+  padding-top: 4.5rem;
+  padding-bottom: 23rem;
+}
+.contact-us-section .container {
+  position: relative;
+  max-width: 132rem;
+  justify-content: space-between;
+}
+.contact-us-section .contact-us-description {
+  padding-top: 4rem;
+  position: relative;
+}
+.contact-us-section .contact-us-description h1 {
+  margin-bottom: 7rem;
+}
+.contact-us-section .contact-us-info {
+  gap: 2rem;
+}
+.contact-us-section .contact-us-info {
+  padding-left: 1rem;
+}
+.contact-us-section .contact-us-info li {
+  align-items: center;
+  gap: 2rem;
+}
+.contact-us-section .contact-us-form {
+  background: #f3f4f6;
+  padding: 4rem 5rem 0 5rem;
+  max-width: 65rem;
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+  position: relative;
+}
+.contact-us-section label {
+  font-family: "Poppins", sans-serif;
+  color: #374151;
+}
+.contact-us-section input,
+.contact-us-section textarea {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  line-height: 180%;
+  outline: none;
+  border: none;
+  background: #e5e7eb;
+}
+.contact-us-section input.field {
+  padding: 1rem 2rem;
+  margin-bottom: 3rem;
+}
+.contact-us-section textarea {
+  resize: none;
+  padding: 1rem 2rem;
+  margin-bottom: 5rem;
+}
+.contact-us-section input.submit {
+  background: #00668c;
+  color: #fffefb;
+  font-weight: 600;
+  padding: 1rem 5rem;
+  z-index: 10;
+  cursor: pointer;
+}
+.contact-us-section .contact-us-form-ending {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(calc(100% - 1px));
+  right: 0;
+  z-index: -1;
+}
+.contact-us-section .contact-us-lines-pattern--1 {
+  position: absolute;
+  right: -10px;
+  top: 180px;
+  z-index: -1;
+}
+.contact-us-section .contact-us-lines-pattern--2 {
+  position: absolute;
+  bottom: -200px;
+  z-index: -1;
+}
+.contact-us-section .popup {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  background-color: #71c4ef;
+  padding: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.311);
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+.contact-us-section .popup.hidden {
+  transform: translateX(60px);
+  opacity: 0;
+}
+.contact-us-section .popup.error {
+  background: #6b7280;
+}
+.contact-us-section .popup.error p {
+  color: #f3f4f6;
+}
+.contact-us-section input.field.missing,
+.contact-us-section textarea.missing {
+  background: #9ca3af;
+}
+@media (max-width: 1240px) {
+  .contact-us-section {
+    padding-bottom: 18rem;
+  }
+  .contact-us-section .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 8rem;
+  }
+  .contact-us-section .contact-us-description {
+    padding-top: 2rem;
+  }
+  .contact-us-section .contact-us-form {
+    max-width: 61.3rem;
+    width: 100%;
+  }
+}
+@media (max-width: 540px) {
+  .contact-us-section {
+    padding-bottom: 10rem;
+  }
+  .contact-us-section .container {
+    gap: 5rem;
+  }
+  .contact-us-section .contact-us-description {
+    align-self: flex-start;
+  }
+  .contact-us-section .contact-us-description h1 {
+    margin-bottom: 4rem;
+  }
+  .contact-us-section .contact-us-info {
+    padding: 0;
+  }
+  .contact-us-section .contact-us-info li {
+    gap: 1rem;
+  }
+  .contact-us-section .contact-us-info svg {
+    width: 3rem;
+    height: 3rem;
+  }
+  .contact-us-section .contact-us-form {
+    padding: 2rem 1.5rem 0 1.5rem;
+  }
+  .contact-us-section input.field {
+    margin-bottom: 2rem;
+  }
+  .contact-us-section textarea {
+    margin-bottom: 3.5rem;
+  }
+  .contact-us-section input.submit {
+    margin-bottom: 3.5rem;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=frontend.css.map*/

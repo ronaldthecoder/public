@@ -1,0 +1,139 @@
+.single {
+  //POST-CONTENT SECTION
+  .post-content {
+    .page-route {
+      gap: 1rem;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+    .page-route a {
+      text-transform: uppercase;
+    }
+    .page-route a:hover {
+      color: $grey--500;
+    }
+    .container {
+      max-width: 95rem;
+    }
+    padding-top: 8rem;
+    .author {
+      text-decoration: underline;
+      font-weight: 600;
+    }
+    h1 {
+      margin-bottom: 3.5rem;
+    }
+    .post-info {
+      margin-bottom: 5rem;
+    }
+    img {
+      border-radius: 5px;
+      margin-bottom: 7rem;
+      height: auto;
+    }
+    .content {
+      gap: 3.5rem;
+      margin-bottom: 9rem;
+    }
+    .divider {
+      margin-bottom: 5rem;
+    }
+    .author-segment {
+      gap: 5.5rem;
+      margin-bottom: 18rem;
+    }
+    .author-img {
+      width: 178px;
+      min-width: 178px;
+      height: 178px;
+      overflow: hidden;
+    }
+  }
+
+  //RELATED POST SECTION
+  .related-post {
+    .container {
+      max-width: 95rem;
+    }
+    h2 {
+      margin-bottom: 10rem;
+    }
+    .related-post-cards {
+      gap: 8.8rem;
+    }
+    .related-post-cards {
+      margin-bottom: 16rem;
+    }
+    .related-post-cards li {
+      width: 431px;
+    }
+  }
+
+  @media (max-width: 1150px) {
+    .related-post {
+      h2 {
+        text-align: center;
+      }
+      .related-post-cards {
+        gap: 6rem;
+        grid-template-columns: 1fr;
+        justify-items: center;
+      }
+    }
+  }
+
+  @media (max-width: 880px) {
+    .post-content {
+      padding-top: 4rem;
+      h1 {
+        margin-bottom: 1.5rem;
+      }
+    }
+    .related-post {
+      .related-post-cards {
+        margin-bottom: 12rem;
+      }
+    }
+  }
+
+  @media (max-width: 540px) {
+    .related-post {
+      h2 {
+        margin-bottom: 4rem;
+      }
+      .related-post-cards li {
+        width: 100%;
+      }
+      .related-post-cards {
+        margin-bottom: 8rem;
+      }
+    }
+    .post-content {
+      padding-top: 2rem;
+      .post-info {
+        margin-bottom: 4rem;
+      }
+      img {
+        margin-bottom: 5rem;
+      }
+      .content {
+        margin-bottom: 7rem;
+      }
+      .author-segment {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+        margin-bottom: 10rem;
+      }
+      .author-descriptions {
+        align-items: center;
+      }
+      .author-descriptions p {
+        text-align: center;
+      }
+      .author-descriptions .title--1 {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}

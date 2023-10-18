@@ -1,0 +1,58 @@
+@mixin atSmall {
+  @media (min-width: 530px) {
+    @content;
+  }
+}
+
+@mixin atSmallMedium {
+  @media (min-width: 767px) {
+    @content;
+  }
+}
+
+@mixin atMedium {
+  @media (min-width: 960px) {
+    @content;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100%;
+  font-weight: 400;
+  position: relative;
+  font-family: Poppins sans-serif;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

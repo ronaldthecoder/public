@@ -1,0 +1,30 @@
+.latest-blogs {
+  height: calc(100vh - 85px);
+  padding-bottom: 2rem;
+  margin-bottom: 7rem;
+  overflow: hidden;
+  position: relative;
+
+  .container {
+    position: relative;
+  }
+
+  .blog_page_pattern--1 {
+    position: absolute;
+    left: -3.5rem;
+    top: 4.5rem;
+    z-index: 10;
+  }
+  .blog_page_pattern--2 {
+    position: absolute;
+    left: 39rem;
+    top: 26rem;
+    z-index: 10;
+  }
+}
+
+@media (max-width: 1020px) {
+  .latest-blogs {
+    height: auto;
+  }
+}

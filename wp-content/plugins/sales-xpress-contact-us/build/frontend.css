@@ -93,7 +93,7 @@
   z-index: 1000;
   transition: all 0.3s ease-in-out;
 }
-.contact-us-section .popup.hidden {
+.contact-us-section .popup.hide {
   transform: translateX(60px);
   opacity: 0;
 }

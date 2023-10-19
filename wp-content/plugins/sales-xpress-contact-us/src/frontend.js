@@ -9,7 +9,7 @@ const ContactUs = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [buttonText, setButtonText] = useState("Submit");
-  const [submitMessage, setSubmitMessage] = useState("hidden");
+  const [submitMessage, setSubmitMessage] = useState("hide");
   const [error, setError] = useState(false);
 
   const submitHandler = (event) => {
@@ -18,7 +18,7 @@ const ContactUs = () => {
       setError(true);
       setSubmitMessage("");
       setTimeout(() => {
-        setSubmitMessage("hidden");
+        setSubmitMessage("hide");
       }, 3000);
       return false;
     }

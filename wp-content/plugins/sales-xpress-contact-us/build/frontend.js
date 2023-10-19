@@ -136,7 +136,7 @@ const ContactUs = () => {
   const [email, setEmail] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)("");
   const [message, setMessage] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)("");
   const [buttonText, setButtonText] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)("Submit");
-  const [submitMessage, setSubmitMessage] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)("hidden");
+  const [submitMessage, setSubmitMessage] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)("hide");
   const [error, setError] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(false);
   const submitHandler = event => {
     event.preventDefault();
@@ -144,7 +144,7 @@ const ContactUs = () => {
       setError(true);
       setSubmitMessage("");
       setTimeout(() => {
-        setSubmitMessage("hidden");
+        setSubmitMessage("hide");
       }, 3000);
       return false;
     }

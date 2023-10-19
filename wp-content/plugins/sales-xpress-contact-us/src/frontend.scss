@@ -89,7 +89,7 @@
     z-index: 1000;
     transition: all 0.3s ease-in-out;
   }
-  .popup.hidden {
+  .popup.hide {
     transform: translateX(60px);
     opacity: 0;
   }
